@@ -6,9 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.mim.css">
     <script>src="./node_modules/bootstrap/dist/js/bootstrap.mim.js"</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Rick and Morty</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <a class="m-0 p-0" href="/">
+                    <img scr="./imagens/logo.png" width="260px">
+                </a>
+                <ul>    
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/personagens.html">PERSONAGENS</a></li>
+                    <li><a href="/episódios.html">EPISÓDIOS</a></li>
+                        <span id="contribuicao">
+                        CONTRIBUIÇÕES
+                        </span>
+                </ul>   
+            </nav>
+        </div>
+    </header>
+    <main id="page-home">
+            <article class="container">
+                <section class="row conteudo"> <!-- cria linha no bootstrap-->
+    
+                    <div class="col-12 offset-md-1 col-md-5">
+                        <img src="./imagens/rickandmorty.png" class="img-fluid" alt="" srcset="" width="495px">
+                    </div>
+                    <div class="col-12 col-md-5 text"> <!--o bootstrap reconhece até 12 colunas en uma linha.
+                        O md é para telas > 768px
+                        se a página for menor que 768px. a figura irá ocupar as 12 colunas e o texto é jogado
+                        para baixo-->
+                        <h1> Rick And Morty</h1>
+                        <p>Rick and Morty (em português Rick e Morty) é uma série de animação adulta norte-americana de comédia e ficção científica criada por Justin Roiland e Dan Harmon.
+    <br> <br>
+                                A série estreou em 2 de Dezembro de 2013 e acompanha as perigosas aventuras do cientista alcoólatra Rick e seu neto Morty, que divide seu tempo entre a vida familiar e viagens interdimensionais.</p>
+            
+                        <button class="botao mr-4">
+                                PERSONAGENS
+                        </button>
+                        <button class="botao">
+                                EPISÓDIOS
+                        </button>
+                    </div>
+                </section>
+            </article>
+        </main>
 
 
     <script scr="./node_modules/jquery/dist/jquery.mim.js"></script>
